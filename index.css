@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-image:url(https://img.freepik.com/premium-photo/yellow-plastic-crosses-zeroches-playing-tic-tac-toe-blue-background-concept-xo-win-challenge-developmental-game-children-flat-lay-top-view_164357-2747.jpg);
+    background-size: cover;
+}
+h1 {
+    margin:50px;
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#gameboard {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 100px;
+    border-right: 4px solid;
+    border-bottom: 4px solid;
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+} 
+button {
+    
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color:black;    
+    color:white;
+    
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 500;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
